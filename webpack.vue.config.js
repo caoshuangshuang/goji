@@ -18,22 +18,11 @@ const config = {
 
 		path: path.resolve(__dirname, "./test")
 	},
-	// resolve: {
-	// 	extensions: ['.js', '.tsx', '.jsx'],
-	// 	fallback: {
-	// 		'react/jsx-runtime': 'react/jsx-runtime.js',
-	// 		'react/jsx-dev-runtime': 'react/jsx-dev-runtime.js',
-	// 	},
-	// 	alias: {
-	// 		'@src': path.resolve(__dirname, './src'),
-	// 		'@api': path.resolve(__dirname, './src/api'),
-	// 		'@common': path.resolve(__dirname, './src/common'),
-	// 		'@components': path.resolve(__dirname, './src/components'),
-	// 		'@pages': path.resolve(__dirname, './src/pages'),
-	// 		'@util': path.resolve(__dirname, './src/util'),
-	// 	},
-
-	// },
+	resolve: {
+		alias: {
+			'@': path.resolve(__dirname, './vue'),
+		},
+	},
 	optimization: {
 		splitChunks: {
 			chunks: 'all',
